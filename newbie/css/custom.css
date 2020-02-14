@@ -1,0 +1,422 @@
+/*
+Author: Mario S. Cisneros, P: 469 484 6839
+URI: http://beta.mariocisneros.me/projects/newbie/
+CSS: Global Stylesheet
+Project: Bootstrap Client Project Template
+Last Modified Date: 2.3.2020
+-------------------------------------------------------------- */
+body {
+    color: #222;
+    font-family: helvetica, verdana, arial, sans-serif;
+    margin: 5.65rem 0 0;
+}
+
+
+
+
+
+/* Header
+-------------------------------------------------- */
+.navbar {
+    padding: 1.5rem 0;
+}
+
+.navbar .nav-link {
+    font-size: 1.25rem;
+    padding-left: 1rem !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #6648b1;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #000;
+}
+
+.navbar-light .navbar-brand {
+    color: #444;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+
+
+
+
+/* BANNER SECTION
+------------------------------------ */
+.banner {
+    background: #222 url("/img/carousel/background.png") center no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .intro {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #fff;
+    padding: 2rem 0 1rem;
+    text-align: center;
+    width: 90%;
+}
+
+.banner .intro p {
+    font: 500 2rem helvetica, sans-serif;
+    text-shadow: 1px 1px 10px #000;
+}
+
+#about .banner {
+    background: #222 url("../img/banners/about.jpg") center no-repeat;
+    min-height: 300px;
+}
+
+#contact .banner {
+    background: #222 url("../img/banners/contact.jpg") center no-repeat;
+    min-height: 300px;
+}
+
+
+
+
+
+/* CLASS SELECTOR RULESETS
+------------------------------------ */
+.card {
+  border-radius: 0.5rem; }
+  .card .card-img-top {
+    border-top-left-radius: calc(.5rem - 1px);
+    border-top-right-radius: calc(.5rem - 1px); }
+  .card .card-title {
+    margin-bottom: 1.5rem; }
+
+.fa, .fas {
+  color: #563d7c; }
+
+.img-fluid {
+  border-radius: 8px; }
+
+
+
+
+
+/* Extend - Overrides | Updated August 14, 2018
+------------------------------------------------- */
+.message, .success, .error, .warning {
+  border: 1px solid #563d7c;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 15px; }
+
+.success {
+  color: #4caf50; }
+
+.error {
+  color: #e74c3c; }
+
+.warning {
+  color: #f0ad4e; }
+
+
+
+
+
+/* HOMEPAGE
+---------------------------------------------------- */
+.carousel {
+    margin-top: 5.65rem;
+}
+
+.carousel-caption {
+    top: 38%;
+}
+
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+
+
+
+
+/* Typography
+---------------------------------------------------- */
+h1 {
+  font-size: 3.5rem;
+  padding: 0;
+  margin: 0;
+  text-shadow: 1px 1px 10px #000;
+  /* 1px horizontal, 1px vertical, 10px wide */
+  text-transform: uppercase; }
+
+h2 {
+  color: #563d7c;
+  font-family: garamond, georgia, serif;
+  letter-spacing: 2px;
+  margin-bottom: 1rem; }
+
+h3 {
+  border-bottom: 1px solid #DADADA;
+  padding: .5rem 0 .5rem .5rem; }
+
+a {
+  color: #563d7c; }
+  a:hover {
+    color: #563d7c; }
+
+
+
+
+
+/* Custom Button
+--------------------------------------------------- */
+.btn {
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 2rem 0 0;
+  white-space: nowrap !important; }
+
+.btn-primary {
+  background-color: #6648b1;
+  border: 1px solid #563d7c; }
+  .btn-primary:hover {
+    background-color: #6648b1;
+    border: 1px solid #563d7c;
+    box-shadow: 2px 2px #2f1c4d; }
+
+.btn-outline-secondary {
+  border-color: #563d7c;
+  color: #563d7c; }
+  .btn-outline-secondary:hover {
+    background-color: #6648b1; }
+
+.btn-light {
+  color: #000; }
+
+
+
+
+
+/* SOCIAL
+------------------------------------------- */
+.social {
+    background-color: #ececec;
+    font-size: 4rem;
+}
+
+.social a i {
+    padding: 0 1rem;
+}
+
+.social .fa-facebook {
+    color: #3b59b6;
+}
+
+.social .fa-twitter {
+    color: #4099ff;
+}
+
+.social .fa-google-plus-g {
+    color: #d73d32;
+}
+
+.social .fa-instagram {
+    color: #4e433c;
+}
+
+.social .fa-youtube {
+    color: #ff3333;
+}
+
+.social .fa-facebook:hover,
+.social .fa-twitter:hover,
+.social .fa-google-plus-g:hover,
+.social .fa-instagram:hover,
+.social .fa-youtube:hover {
+    color: #222;
+}
+
+
+
+
+
+/* Footer - Overrides | Updated February 3, 2020
+-------------------------------------------------- */
+footer {
+    background-color: #563d7c;
+    color: #fff;
+    font-weight: 300;
+    overflow: hidden;
+    padding: 3rem 0;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    line-height: 1.75;
+    margin: 1rem 0;
+}
+
+footer ul {
+    margin: 1rem 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    list-style: none;
+}
+
+footer hr {
+    border-top: 1px solid #DADADA;
+}
+
+footer a {
+    color: #fff;
+    padding: 0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    background: transparent;
+    color: #e7d7ff;
+    text-decoration: underline;
+}
+
+footer h4 {
+    color: #e7d7ff;
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+footer .contact li {
+    display: block;
+    line-height: 2;
+    list-style-type: none;
+}
+
+footer .resources li,
+footer .related li {
+    display: list-item;
+    line-height: 2;
+    list-style-type: disc;
+    margin-left: 1rem;
+}
+
+footer .fa, footer .fas {
+    color: #e7d7ff;
+    font-size: 1rem;
+}
+
+
+/* COPYRIGHT AND LEGAL SECTION
+---------------------------------------------- */
+.copyright {
+    color: #7d8990;
+}
+
+.legal a {
+    color: #7d8990;
+    padding: 0;
+}
+
+.legal ul {
+    margin: 0;
+    padding: 0;
+}
+
+.legal li {
+    display: inline;
+}
+
+.socket {
+    background-color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.socket p {
+    margin-bottom: 0;
+}
+
+
+
+
+
+/* Media Queries - Overrides | Updated August 16, 2018
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+--------------------------------------------------------- */
+@media (min-width: 320px) {
+    .navbar-expand-lg > .container,
+    .navbar-expand-lg > .container-fluid {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    h2.display-4 {
+        font-size: 2rem;
+    }
+
+    .social {
+        font-size: 2rem;
+    }
+
+    .social a i {
+        padding: 0 .5rem;
+    }
+}
+
+@media (min-width: 576px) {
+    h2.display-4 {
+        font-size: 2.5rem;
+    }
+
+    .social {
+        font-size: 4rem;
+    }
+
+    .social a i {
+        padding: 0 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-caption h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+}
