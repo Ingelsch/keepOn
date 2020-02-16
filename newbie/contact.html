@@ -18,12 +18,25 @@
 
     <!-- CUSTOM CSS OVERRIDES -->
     <link rel="stylesheet" href="css/custom.css">
+    
+    <!--HEADER AND FOOTER-->
+    <!-- <script language="javascript" type="text/javascript"  src="script/script.js"></script> -->
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function () {
+            $("#header").load("includes/header.htm");
+            $("#footer").load("includes/footer.htm");
+        });
+    </script>
   </head>
 
   <body id="contact">
     <!-- HEADER: https://getbootstrap.com/docs/4.0/components/navbar/#how-it-works/ -->
     <!--#include virtual="includes/header.htm"-->
-
+    <div id="header"></div>
 
     <!-- PRODUCT INTRO SECTION <img class="d-block w-100" src="img/carousel/background.png" alt="First slide">-->
     <div class="jumbotron-fluid  banner">
@@ -128,6 +141,6 @@
 
     <!-- FOOTER SECTION -->
     <!--#include virtual="includes/footer.htm"-->
-
+    <div id="footer"></div>
   </body>
 </html>
