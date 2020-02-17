@@ -1,36 +1,30 @@
 function pairElement(str) {
     let door = [];
     //har A og T, og C og G. 4 cases
-    for(char in str){
-        //console.log(str[char]);
-        let mitt = str[char];
-        switch (mitt) {
+    let seeif = function(char){    
+        switch (char) {
             case "A":
-                
-                door.push(["A","T"]);
+                door.push(["A", "T"]);
                 break;
             case "T":
-                
-                door.push(["T","A"]);
+                door.push(["T", "A"]);
                 break;
             case "C":
-                
-                door.push(["C","G"]);
+                door.push(["C", "G"]);
                 break;
             case "G":
-                
-                door.push(["G","C"]);
-                break;
-            default:
+                door.push(["G", "C"]);
                 break;
         }
-        
+    };
+
+
+    for (var i = 0; i < str.length; i++){
+        seeif(str[i]);
     }
     console.log(door);
-    
-    //console.log(str[0]);
-    return str;
-  }
+    return door;
+}
   
   pairElement("ATCGA");
 /*The DNA strand is missing the pairing element. Take each character, get its pair, and return the results as a 2d array.
