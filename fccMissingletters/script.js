@@ -1,7 +1,9 @@
 function fearNotLetter(str) {
     console.log(str);
+    const caps = [...Array(26)].map((val, i) => String.fromCharCode(i + 97));
     const letters = (() => {
-        const caps = [...Array(26)].map((val, i) => String.fromCharCode(i + 97));
+        // const caps = [...Array(26)].map((val, i) => String.fromCharCode(i + 97));
+        console.log(caps);
         return caps;
       }
       )(); 
