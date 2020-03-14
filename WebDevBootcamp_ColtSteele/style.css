@@ -1,0 +1,24 @@
+
+p {
+    font-family: Arial;
+    font-size: 2.0em;
+    line-height: 1.5;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: 'Open Sans';
+    font-size: 6.0em;
+    text-align: center;
+    text-decoration: overline;    
+}
+
+body {
+    font-size: 10px;
+}
+
+span {
+    font-size: 2.0em;
+}
+

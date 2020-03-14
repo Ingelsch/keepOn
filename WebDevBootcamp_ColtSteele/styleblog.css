@@ -1,0 +1,45 @@
+/*  border color: #bdc3c7
+    date color: #3498db 
+    h2 color #2c3e50 §
+    
+    font source sans pro §
+    
+    turn on left border after h1*/
+
+body {
+    font-family: "Source Sans Pro";
+    border: 20px solid #bdc3c7;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;    
+    width: 700px;
+
+}
+
+hr{
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h3 {
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #3498db;
+    margin-left: 20px;
+    letter-spacing: 0.2rem;
+}
+
+
+h2 {
+    color: #2c3e50;
+    font-size: 2.0rem;
+    margin-left: 20px;
+}
+
+.nr1 {
+    
+    border-left: 10px solid #bdc3c7;
+    padding-left: 10px;
+}
