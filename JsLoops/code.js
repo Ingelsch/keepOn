@@ -34,7 +34,7 @@ months.splice(1, 0, 'Feb'); //insert 'Feb' at index 1, but removes 0 (none)
 months.splice(4, 1, 'May') // insert 'May' at index 4, removing the one (1) at that position
 // console.log(months);
 
-// sort(), only sort strings, everything is converted to strings
+// sort(), this method only sort strings, everything is converted to strings
 
 // let scores = [1, 80, 100, 2450, 9, -12, 0, 42];
 // scores.sort();
