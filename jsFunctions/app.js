@@ -99,6 +99,14 @@ function isSnakeEyes(num1, num2) {
     }
 }
 
+const hen = {
+    name: "Helen",
+    eggCount: 0,
+    layAnEgg() {
+        this.eggCount++
+        return "EGG"
+    }
+}
 
 // singSong()
 // singSong()
@@ -120,6 +128,12 @@ function reverse(num) {
     // return num.toString().replace(/\D/g, '0').split('').reverse().join();
     return num.split("").reverse().join("");
 }
+
+function revers(str) {
+
+    return str.split("").reverse().join("");
+}
+
 
 /* 2. Write a JavaScript function that checks wether a passed string is a palidrome or not
 A palindrome is a word, phrase or sequence that reads the same backward as forward, e.g. madam or nurses run */
@@ -181,3 +195,94 @@ const square = {
         return side * 4;
     }
 };
+
+/* 4. Write a JavaScript function that returns a passed string with letters in alphabetical order.
+ Example string : 'webmaster'
+Expected Output : 'abeemrstw'
+Assume punctuation and numbers symbols are not included in the passed string.*/
+
+function alphabetize(str) {
+    return str.split("").sort().join("");
+}
+
+/* 5. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case. 
+Example string : 'the quick brown fox'
+Expected Output : 'The Quick Brown Fox ' */
+
+function uppercase(str) {
+
+    let arr1 = str.split(' ');
+    let arr2 = [];
+
+    for (let i = 0; i < arr1.length; i++) {
+        arr2.push(arr1[i].charAt(0).toUpperCase() + arr1[i].slice(1));
+
+    }
+    return arr2.join(' ');
+}
+
+/* 6. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
+Example string : 'Web Development Tutorial'
+Expected Output : 'Development' */
+
+function longestWord(str) {
+
+
+    let regex = /\w[a-z]{0,}/gi;
+    let arr = str.match(regex);
+    console.log(arr);
+    let winner = arr[0];
+
+    for (let i = 1; i < arr.length; i++) {
+        if (winner.length < arr[i].length) {
+            winner = arr[i];
+        }
+    }
+    return winner;
+}
+
+/* 7. Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string.
+Note : As the letter 'y' can be regarded as both a vowel and a consonant, we do not count 'y' as vowel here.
+Example string : 'The quick brown fox'
+Expected Output : 5
+ */
+
+function countVowels(str) {
+    let vowels = 'aeiouAEIOU';
+    let count = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        if (vowels.indexOf(str[i]) !== -1) {
+            count += 1;
+        }
+    }
+
+    return count;
+
+
+}
+// * This function returns true if 'c' is a vowel
+function isVowel(c) {
+    return ['a', 'e', 'i', 'o', 'u'].indexOf(c) !== -1
+}
+
+/* 8. Write a JavaScript function that accepts a number as a parameter and check the number is prime or not. Go to the editor
+Note : A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+ */
+
+// function isPrime(num) {
+//     for (let i = 2; i < num; i++)
+//         if (num % i === 0) return false;
+//     return num > 1;
+// }
+const isPrime = num => {
+    for (let i = 2; i < num; i++)
+        if (num % i === 0) return false;
+    return num > 1;
+}
+
+/* 9. Write a JavaScript function which accepts an argument and returns the type. 
+Note : There are six possible values that typeof returns: object, boolean, function, number, string, and undefined. */
+function whatType(thing) {
+    return typeof (thing);
+}
