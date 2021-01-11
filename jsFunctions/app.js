@@ -187,14 +187,14 @@ function generateAll(str) {
     return kosing;
 }
 
-const square = {
+/* const square = {
     area(side) {
         return side * side;
     },
     perimeter(side) {
         return side * 4;
     }
-};
+}; */
 
 /* 4. Write a JavaScript function that returns a passed string with letters in alphabetical order.
  Example string : 'webmaster'
@@ -276,6 +276,7 @@ Note : A prime number (or a prime) is a natural number greater than 1 that has n
 //     return num > 1;
 // }
 const isPrime = num => {
+
     for (let i = 2; i < num; i++)
         if (num % i === 0) return false;
     return num > 1;
@@ -286,3 +287,91 @@ Note : There are six possible values that typeof returns: object, boolean, funct
 function whatType(thing) {
     return typeof (thing);
 }
+
+/* web dev bootcamp
+Map practice
+define a function called cleanNames. It should accept an array of strings that may contain additional space character before and after. Use the array map method to return a new array, full of trimmed names
+ie: 
+cleanNames([" timothee", "    darth_hater", "sassyfrassy  ", " elton john   "]);
+        => ["timothee", "darth_hater", "sassyfrassy", "elton john"]
+*/
+// * Hint: use a string method to TRIM each string 
+function cleanNames(arr) {
+
+    const maps = arr.map(function (m) {
+        return m.trim();
+    });
+    // console.log(maps)
+    return maps;
+}
+// console.log(cleanNames([" timothee", "    darth_hater", "sassyfrassy  ", " elton john   "]));
+
+
+//*arrow function with parens aound param
+// const square = (x) => {
+//     return x * x;
+// }
+
+//*arrow function no parens around param
+// const square = x => {
+//     return x * x;
+// }
+//*one-liner implicit return
+const square = x => x * x
+
+// *Normal arrow function notation
+// const sum = (x, y) => {
+//     return x + y;
+// }
+
+//  *arrow function one-liner implicit return
+const sum = (x, y) => x + y
+
+
+// const rollDie = () => {
+//     return Math.floor(Math.random() * 6) + 1
+// }
+
+//*arrow function implisit return
+
+const rollDie = () => (
+    Math.floor(Math.random() * 6) + 1
+)
+
+/* Write an arrow function expression called greet. It should accept a single string argrument, representing a person's name. I should return a greeting string as shown:
+greet("Inge") - "Hey Inge!"
+greet("Mathea") - "Hey Mathea!"
+ARROW FUNCTION SYNTAX!!
+*/
+const greets = (str) => {
+    return "Hey " + str + "!";
+}
+
+/* console.log("Heeeiiiii");
+
+setTimeout(() => {
+    console.log("er du der?")
+}, 3000)
+
+console.log("HADET") */
+
+/* const id = setInterval(() => {
+    console.log(Math.random())
+}, 2000); */
+
+//*clearInterval(id);
+
+/* Filter method
+Write a function called validUserNames that accepts an array of usernames (strings). It should return a new array, containing only the usernames that are less than 10 characters
+
+validUserNames(["mark", "staceysmom1978", "q298321282238983", "carrie98", "MoanaFan"])
+-> ["mark", "carrie98", "MoanaFan"]
+*/
+
+function validUserNames(arr) {
+
+    return arr.filter(klipp => klipp.length < 10);
+
+}
+// console.log(validUserNames(["mark", "staceysmom1978", "q298321282238983", "carrie98", "MoanaFan"]));
+
